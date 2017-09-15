@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/*瀑布流位置是通过计算绝对定位实现的*/
+#main{
+  position: relative;
+}
+/*padding来实现图片与图片的间距是因为用js offset获取内容高度时能获取padding而不能获取margin*/
+.box{
+  padding: 15px 0 0 15px;
+  float: left;
+}
+
+.pic{
+  padding: 10px;
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.pic img{
+  width: 165px;
+  height: auto;
+}
