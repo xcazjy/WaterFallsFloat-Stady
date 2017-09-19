@@ -1,0 +1,39 @@
+/*css3实现瀑布流使用的是多栏布局*/
+#main{
+  -webkit-column-width:202px;
+  -moz-column-width:202px;
+  -o-column-width:202px;
+  -ms-column-width:202px;
+  /*-webkit-column-rule:2px dashed #f00;
+  -moz-column-rule:2px dashed #f00;
+  -o-column-rule:2px dashed #f00;
+  -ms-column-rule:2px dashed #f00; */ 
+ /* -webkit-column-gap:5px;
+  -moz-column-gap:5px;
+  -o-column-gap:5px;
+  -ms-column-gap:5px;*/ /*列间距 并非定义多少就是多少而是用window宽除以列数*/
+ /* -webkit-column-count:6;
+  -moz-column-count:6;
+  -o-column-count:6;
+  -ms-column-count:6;*/ /*列数*/
+}
+/*相当于获取window宽除以每一列的宽=列数*/
+.box{
+  padding: 10px 0 0 15px;
+}
+
+.pic{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+  width: 165px;
+}
+
+.pic img{
+  display: block;
+  width: 165px;
+  height: auto;
+}
+
+

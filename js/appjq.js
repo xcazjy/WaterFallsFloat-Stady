@@ -19,7 +19,7 @@ function waterfall(){
   var $boxs=$('#main>div');
   var w=$boxs.eq(0).outerWidth(); // width()只获得定义的他的宽度，outerWidth()获得的值时包含border、padding值在内的值
   var cols=Math.floor($(window).width()/w);
-  $('main').width(w*cols).css('margin','0 auto'); // 不用写px
+  $('#main').width(w*cols).css('margin','0 auto'); // 不用写px
   var arrH=[];
   $boxs.each(function(index, value){
     var h=$boxs.eq(index).outerHeight();
