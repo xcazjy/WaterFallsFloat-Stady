@@ -49,7 +49,7 @@ function waterfall(parent, box){
 }
 
 function getByClass(parent, className){
-  var boxArr=new Array(); //用来储存获取到的所有class为box的元素，当然也可以写别的类
+  var boxArr=new Array(), //用来储存获取到的所有class为box的元素，当然也可以写别的类
       oElements=parent.getElementsByTagName('*');
   for (var i = 0; i < oElements.length; i++) {
     if (oElements[i].className==className) {
